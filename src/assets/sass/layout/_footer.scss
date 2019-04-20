@@ -1,0 +1,147 @@
+.footer{
+    text-align: center;
+
+    margin-bottom: 4rem;
+
+
+    &__header{
+        display: block;
+        position: relative;
+
+        padding: 0 4rem;
+        margin-bottom: 4rem;
+
+        font-family: 'Arial', sans-serif;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        color: $vnda-color;
+
+        &__line{
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            width: 20%;
+            height: 2px;
+
+            background-color: rgba($secondary-color, .7);
+
+            &--left{
+                left: 15%;
+            }
+
+            &--right{
+                right: 15%;
+            }
+        }
+    }
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__social-media{
+        &__icons{
+            font-size: 2rem;
+
+            i{
+                margin: 0 2rem;
+
+                cursor: pointer;
+
+                transition: all .3s ease-in;
+
+                &:hover{
+                    opacity: .7;
+                }
+            }
+        }
+    }
+
+    &__divisor{
+        display: inline-block;
+        width: 2px;
+        height: 5rem;
+
+        margin: 2rem 0;
+
+        background-color: $secondary-color;
+    }
+
+    &__newsletter{
+
+        &__header{
+            font-family: $main-font;
+            letter-spacing: 3px;
+            line-height: 2.3em;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $secondary-color;
+        }
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+
+    &__input{
+        display: block;
+        padding: 1rem;
+
+        font-family: $main-font;
+        text-align: center;
+
+        border: 2px solid $secondary-color;
+    }
+    
+    &__submit{
+        display: block;
+        padding: 1rem;
+
+        font-family: $main-font;
+        font-weight: 900;
+        letter-spacing: 2px;
+
+        border: 2px solid $secondary-color;
+        border-top: none;
+
+        transition: all .3s ease-in;
+
+        &:hover{
+            background-color: $secondary-color;
+            color: $color-white;
+        }
+    }
+
+    &__menu{
+        
+
+        &--left{
+            padding-left: 15rem;
+        }
+
+        &--right{
+            padding-right: 15rem;
+        }
+
+    }
+
+    &__link{
+        font-family: $main-font;
+        letter-spacing: 3px;
+        line-height: 2.3em;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $secondary-color;
+
+        transition: all .3s ease-in;
+
+        &:hover{
+            color: $hover-color;
+        }
+    }
+
+
+}

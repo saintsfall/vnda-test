@@ -1,0 +1,26 @@
+.products{
+    max-width: 80vw;
+
+    margin: 0 auto 4rem auto;
+
+    &__header{
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        padding: 0 4rem;
+
+        font-family: $main-font;
+        font-size: 4rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        line-height: 1.2em;
+        color: $secondary-color;
+
+        opacity: .8;
+    }
+
+    &__grid{
+        display: grid;
+
+    }
+}

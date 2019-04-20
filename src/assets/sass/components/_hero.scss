@@ -1,0 +1,71 @@
+.hero{
+    @include flex-centered;
+
+    width: 100%;
+    height: 100vh;
+
+    text-align: center;
+
+    background-image: linear-gradient(
+                        to right bottom, 
+                        rgba($main-color, .7), 
+                        rgba($main-color, .7)
+                        ), 
+                        url('/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__text-box{
+
+        &__title{
+            margin-bottom: 1rem;
+
+            font-family: $main-font;
+            font-size: 4rem;
+            letter-spacing: 2px;
+            color: $color-white;
+
+            animation: moveInLeft 1s ease-out;
+            
+        }
+
+        &__subtitle{
+            font-family: $main-font;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+            color: $color-white;
+
+            animation: moveInRight 1s ease-out;
+        }
+    }
+
+    &__cta{
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+
+        border: 2px solid $color-white;
+        border-radius: 4rem;
+
+        font-family: $main-font;
+        font-weight: 900;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-white;
+
+        transition: all .4s ease;
+
+        animation: moveInBottom 1s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+
+
+    &__cta:hover{
+        box-shadow: 0 1px 1em rgba(0, 0, 0, .2);
+
+        color: $hover-color;
+
+        background-color: $color-white;
+    }
+}

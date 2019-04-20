@@ -1,0 +1,44 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5rem;
+    background-color: $color-white;
+
+    box-shadow: 0 2px 3px rgba(0,0,0, .2);
+
+    &__logo{
+        font-family: 'Arial', sans-serif;
+        font-size: 3rem;
+        letter-spacing: 1px;
+        color: $vnda-color;
+    }
+
+    &__icon-box{
+        display: flex;
+        margin-right: 2rem;
+
+        i {
+            padding-left: 1rem;
+
+            font-size: 1.4rem;
+            color: $secondary-color;
+
+            cursor: pointer;
+
+            transition: all .3s ease-in;
+        }
+
+        i:hover{
+            color: $hover-color;
+
+            text-shadow: 0 1px 1px rgba(0,0,0, .2);
+        }
+    }
+}
