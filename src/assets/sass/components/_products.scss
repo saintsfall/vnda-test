@@ -21,6 +21,17 @@
 
     &__grid{
         display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
 
+        @media screen and (max-width: 1120px) {
+            grid-template-columns: auto;
+        }
+
+    }
+
+    &__showcase{
+        width: 500px;
     }
 }
