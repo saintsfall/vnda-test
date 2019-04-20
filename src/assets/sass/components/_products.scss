@@ -32,6 +32,172 @@
     }
 
     &__showcase{
-        width: 500px;
+        position: relative;
+
+        width: 30rem;
+        height: 30rem;
+        
+        &__title{
+            position: absolute;
+            z-index: 10;
+
+            font-family: $main-font;
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            line-height: 1.2em;
+            color: $secondary-color;
+
+            &--bottle-1{
+                top: 30%;
+                left: 10%;
+            }
+
+            &--bottle-2{
+                top: 30%;
+                left: 55%;
+            }
+
+            &--bottle-3{
+                top: 40%;
+                left: 50%;
+            }
+
+            &--bottle-4{
+                top: 60%;
+            }
+        }
+
+        &__ingredients{
+            position: absolute;
+            z-index: 10;
+            width: 10rem;
+
+            font-family: $main-font;
+            font-size: .5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            line-height: 1.2em;
+            color: $secondary-color;
+
+            &--bottle-1{
+                top: 38%;
+                left: 22%;
+            }
+
+            &--bottle-2{
+                top: 38%;
+                left: 55%;
+            }
+
+            &--bottle-3{
+                top: 48%;
+                left: 40%;
+            }
+
+            &--bottle-4{
+                top: 68%;
+                left: 15%;
+            }
+        }
+
+        &__image{
+            position: absolute;
+            width: 60%;
+            height: 60%;
+            
+
+            &--bottle-1{
+                top: 30%;
+                left: 40%;
+
+                @include product-image('bottle-1');
+
+            }
+
+            &--bottle-2{
+                top: 0;
+                left: 2%;
+
+                @include product-image('bottle-2');
+            }
+
+            &--bottle-3{
+                top: 0;
+                left: -5%;
+
+
+                @include product-image('bottle-4');
+            }
+
+            &--bottle-4{
+                top: 30%;
+                left: 30%;
+
+                @include product-image('bottle-3');
+            }
+        }
+
+        &:hover > .bottle-1{
+            transform: translateY(-10px);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+        }
+
+        &:hover > .bottle-2{
+            transform: translateY(-10px);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+        }
+
+        &:hover > .bottle-3{
+            transform: translateY(-10px);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+        }
+
+        &:hover > .bottle-4{
+            transform: translateY(-10px);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+        }
+    }
+
+    .bottle-1{
+        @include showcase-box;
+        top: 10%;
+        left: 20%;
+
+        background-color: $bottle-1;
+
+        transition: all .3s ease-in;
+    }
+
+    .bottle-2{
+        @include showcase-box;
+        top: 25%;
+        left: 12%;
+
+        background-color: $bottle-2;
+
+        transition: all .3s ease-in;
+    }
+
+    .bottle-3{
+        @include showcase-box;
+        top: 15%;
+        left: 10%;
+
+        background-color: $bottle-3;
+
+        transition: all .3s ease-in;
+    }
+
+    .bottle-4{
+        @include showcase-box;
+        top: 20%;
+        left: 10%;
+
+        background-color: $bottle-4;
+
+        transition: all .3s ease-in;
     }
 }
