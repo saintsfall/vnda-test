@@ -7,6 +7,9 @@
     <title>Vnda Test</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Slick -->
+    <link rel="stylesheet" href="scripts/slick/slick.css">
+    <link rel="stylesheet" href="scripts/slick/slick-theme.css">
     <!-- Main styles -->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -15,6 +18,37 @@
         <div class="menu">
             <input type="checkbox" name="toggler" class="menu__toggler">
             <div class="menu__hamburger"></div>
+        </div>
+
+        <div class="fixed__menu">
+    
+            <div class="fixed__menu__overlay"></div>
+
+            <div class="fixed__menu__content">
+                <div class="fixed__menu__image">
+                    <img src="/images/overlay-image.jpg" alt="Sucos Prensados a Frio">
+                    <div class="fixed__menu__image__text">
+                        <div class="fixed__menu__image__text__box">
+                            <h3>Sucos</h3>
+                            <h3>Prensados</h3>
+                            <h3>A Frio</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fixed__menu__nav">
+                    <div class="fixed__menu__header">
+                        <h2>Loja</h2>
+                    </div>
+    
+                    <ul class="fixed__menu__list">
+                        <li class="fixed__menu__item"><a href="javascript:void(0)" class="fixed__menu__link">Sucos</a></li>
+                        <li class="fixed__menu__item"><a href="javascript:void(0)" class="fixed__menu__link">Sopas</a></li>
+                        <li class="fixed__menu__item"><a href="javascript:void(0)" class="fixed__menu__link">Kit Detox</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
         <div class="header__logo">
@@ -108,7 +142,18 @@
     </section>
 
     <section class="carousel">
-        Carousel Goes Here
+        <div class="carousel__container">
+            <div class="carousel__header">
+                <p>Frutas</p>
+                <p>Selecionadas</p>
+                <p>Com carinho</p>
+            </div>
+            <div class="slick">
+                <div class="carousel__image carousel__image--1"></div>
+                <div class="carousel__image carousel__image--2"></div>
+                <div class="carousel__image carousel__image--3"></div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
@@ -156,5 +201,10 @@
         </div>
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="scripts/slick/slick.min.js"></script>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/fixed-menu.js"></script>
 </body>
 </html>

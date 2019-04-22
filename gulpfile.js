@@ -35,13 +35,18 @@ function htmlPug() {
         .pipe(browserSync.stream());
 }
 
+// Transfering the JS file
+function scripts() {
+    return gulp
+        .src('./src/assets/scripts/**/*.js')
+        .pipe(gulp.dest('./dist/scripts/'));
+}
+
 //Compile SASS/SCSS
 function compileSass() {
     let plugins = [
         cssnano(),
         autoprefixer({browsers: ['last 2 versions']}),
-
-
     ]
 
     return gulp
@@ -62,10 +67,13 @@ function watch() {
 
     gulp.watch('./src/index.html', html);
     gulp.watch('./src/index.html').on('change', browserSync.reload);
+    gulp.watch('./src/assets/scripts/**/*.js', scripts);
+    gulp.watch('./src/assets/scripts/**/*.js').on('change', browserSync.reload);
     gulp.watch('./src/assets/sass/**/*.scss', compileSass);
 }
 
 // Exporting tasks
 exports.html = html;
 exports.sass = compileSass;
+exports.js = scripts;
 exports.w = watch;
