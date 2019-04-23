@@ -4,11 +4,14 @@ $(document).ready(function() {
         autoplay:true,
         autoplaySpeed: 2000,
         speed: 400,
-        infinite: true
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     })
-    responsive: [
-        {
-
-        }
-    ]
 });
